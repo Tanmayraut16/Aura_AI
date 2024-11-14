@@ -1,0 +1,32 @@
+/* Toggle button styling */
+.toggle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  border-radius: 30px;
+  background-color: var(--switch-background);
+  color: var(--switch-color);
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, color 0.3s;
+  font-family: Arial, sans-serif;
+}
+
+.icon {
+  font-size: 1.1em;
+  color: var(--switch-active-icon);
+  display: flex;
+  align-items: center;
+}
+
+span {
+  margin-left: 10px;
+}
+

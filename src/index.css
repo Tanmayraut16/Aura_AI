@@ -10,4 +10,52 @@
 #root{
   min-height: 100vh;
   display: flex;
+  animation: fadeIn 1.5s;
+}
+
+[data-theme='light']{
+  --sidebar-bg-color: #f0f4f9;
+  --new-chat-bg-color: #e6eaf1;
+  --new-chat-text-color: grey;
+  --recent-entry-hover-bg: #e2e6eb;
+  --recent-entry-text-color: #282828;
+  --primary-text-color: #585858;
+  --secondary-text-color: #c4c7c5;
+  --background-color: #ffffff;
+  --card-background-color: #f0f4f9;
+  --hover-card-background: #dfe4ea;
+  --search-box-background: #f0f4f9;
+  --loader-background: #f6f7f8;
+  --loader-gradient: linear-gradient(to right, #9ed7ff, #ffffff, #9ed7ff);
+}
+
+/* Dark theme colors */
+[data-theme='dark'] {
+  --sidebar-bg-color: #2a2a2a;
+  --new-chat-bg-color: #2a2a2a;
+  --new-chat-text-color: #b0b0b0;
+  --recent-entry-hover-bg: #333333;
+  --recent-entry-text-color: #e0e0e0;
+  --primary-text-color: #e0e0e0;
+  --secondary-text-color: #a1a1a1;
+  --background-color: #1a1a1a;
+  --card-background-color: #2a2a2a;
+  --hover-card-background: #3a3a3a;
+  --search-box-background: #2a2a2a;
+  --loader-background: #3a3a3a;
+  --loader-gradient: linear-gradient(to right, #4b90ff, #333333, #4b90ff);
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+}
+
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }
